@@ -546,6 +546,89 @@
     color: var(--moss-deep);
   }
 
+  /* ============ CARE ============ */
+  .care {
+    padding: 120px 40px;
+    background: var(--bg-paper);
+  }
+  .care-inner {
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  .care-header {
+    max-width: 640px;
+    margin: 0 auto 80px;
+    text-align: center;
+  }
+  .care-header .section-label {
+    justify-content: center;
+  }
+  .care-header .section-label::after {
+    content: '';
+    width: 24px;
+    height: 1px;
+    background: var(--moss-deep);
+  }
+  .care-lead {
+    color: var(--ink-soft);
+    font-size: 16px;
+    line-height: 2;
+  }
+  .care-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1px;
+    background: var(--line);
+    border: 1px solid var(--line);
+  }
+  .care-card {
+    background: var(--bg-cream);
+    padding: 56px 48px;
+  }
+  .care-card-label {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    color: var(--terra);
+    margin-bottom: 16px;
+  }
+  .care-card-title {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--ink-deep);
+    margin-bottom: 28px;
+    letter-spacing: -0.01em;
+  }
+  .care-card ul {
+    list-style: none;
+    padding: 0;
+  }
+  .care-card li {
+    position: relative;
+    padding-left: 18px;
+    color: var(--ink-soft);
+    font-size: 14.5px;
+    line-height: 1.9;
+    margin-bottom: 10px;
+  }
+  .care-card li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 14px;
+    width: 8px;
+    height: 1px;
+    background: var(--terra);
+  }
+  .care-card li:last-child { margin-bottom: 0; }
+  @media (max-width: 720px) {
+    .care { padding: 80px 24px; }
+    .care-header { margin-bottom: 48px; }
+    .care-grid { grid-template-columns: 1fr; }
+    .care-card { padding: 40px 28px; }
+  }
+
   /* ============ VISIT ============ */
   .visit {
     padding: 120px 40px;
@@ -700,6 +783,7 @@
     <li><a href="#collection">분재</a></li>
     <li><a href="#cafe">카페</a></li>
     <li><a href="#class">클래스</a></li>
+    <li><a href="#care">돌봄</a></li>
     <li><a href="#visit">방문</a></li>
   </ul>
 </nav>
@@ -873,6 +957,42 @@
       직접 심고 다듬어, 당신만의 풍경을 완성해보세요.
     </p>
     <a href="#visit" class="class-cta">오픈 후 예약 안내</a>
+  </div>
+</section>
+
+<!-- CARE -->
+<section class="care" id="care">
+  <div class="care-inner reveal">
+    <div class="care-header">
+      <div class="section-label">Care · 돌봄</div>
+      <h2 class="section-title">미니 분재,<br>물 한 번의 시간.</h2>
+      <p class="care-lead">
+        작은 화분일수록 수분이 금방 증발합니다.<br>
+        하루 한 번, 겉흙을 살피는 것으로 충분합니다.
+      </p>
+    </div>
+    <div class="care-grid">
+      <div class="care-card">
+        <div class="care-card-label">— 01</div>
+        <h3 class="care-card-title">일상 물주기</h3>
+        <ul>
+          <li>매일 겉흙의 상태를 한 번 확인합니다.</li>
+          <li>겉흙이 말라 있으면 배수구로 물이 흐를 만큼 흠뻑 주세요.</li>
+          <li>수압은 약하게. 뿌리에 부담이 되지 않도록.</li>
+          <li>여름은 매일, 가을은 1~2일, 겨울은 3~4일마다 아침에.</li>
+        </ul>
+      </div>
+      <div class="care-card">
+        <div class="care-card-label">— 02</div>
+        <h3 class="care-card-title">저면관수</h3>
+        <ul>
+          <li>대야에 물을 받아 화분 흙의 2/3가 잠기도록 놓습니다.</li>
+          <li>약 10분간 충분히 흡수시켜주세요.</li>
+          <li>꺼낸 뒤엔 통풍이 잘 되는 곳에서 여분의 물이 빠지도록.</li>
+          <li>4~5일 외출 시, 담궈두고 떠나는 것도 방법입니다.</li>
+        </ul>
+      </div>
+    </div>
   </div>
 </section>
 
